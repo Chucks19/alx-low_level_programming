@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	int a
-	char b
-	void c
-	double d
-	float f
+	int a;
+	char b;
+	void c;
+	double d;
+	float f;
 	/* with sizeof we get the size of the type*/
 	printf("int size is: %lu bytes\n", sizeof(a));
 	printf("char size is: %lu bytes\n", sizeof(b));
