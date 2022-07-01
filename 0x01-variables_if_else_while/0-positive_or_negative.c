@@ -5,7 +5,7 @@
  * main - entry point
  * betty style doc for function main goes there
  *
- * Return : Alway 0 
+ * Return:Alway 0
  */
 int main(void)
 {
