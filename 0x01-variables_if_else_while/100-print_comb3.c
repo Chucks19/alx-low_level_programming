@@ -22,7 +22,7 @@ int main(void)
 			putchar(d);
 			if (c + d != 17)
 			{
-				putchar(',');
+				putchar(':');
 				putchar(' ');
 			}
 		}
