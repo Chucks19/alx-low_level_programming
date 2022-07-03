@@ -19,7 +19,7 @@ int main(void)
 		if (c != d)
 		{
 			putchar(c);
-			putchar(d)
+			putchar(d);
 		}
 		}
 	}
