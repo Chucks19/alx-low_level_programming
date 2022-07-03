@@ -11,17 +11,14 @@ int main(void)
 {
 	int c;
 	int d;
-	for (c = 0; (c <= 8); )
+	for (c = 0; (c <= 8) && for (d = c; d <=9; d++)
 	{
-		for (d = c; d <= 9; d++)
+		if(d != c && c != d)
 		{
-			if (d != c && c != d)
-			{
-				putchar(c + '0');
-				putchar(d + '0');
-			}
-			putchar(',');
-			putchar(' ');
+		putchar(c + '0');
+		putchar(d + '0');
+		putchar(',');
+		putchar(' ');
 		}
 		c++;
 	}
