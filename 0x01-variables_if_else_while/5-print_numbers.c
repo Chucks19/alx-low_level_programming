@@ -13,7 +13,7 @@ int main(void)
 
 	for (c = 0; (c < 10); c++)
 	{
-		print(c);
+		printf(c);
 	}
 		print("\n");
 		return (0);
