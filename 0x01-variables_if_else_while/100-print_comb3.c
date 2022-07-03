@@ -12,18 +12,17 @@ int main(void)
 	int c;
 	int d;
 
-	for (c = '0'; (c <= '8'); c++)
+	for (c = 0; (c <= 8); c++)
 	{
-		for (d = c; d <= '9'; d++)
+		for (d = c; d <= 9; d++)
 		{
 		if (c != d)
 		{
-			putchar(c);
-			putchar(d);
-				
-			if (c + d != 16)
+			putchar(c + '0');
+			putchar(d + '0');
+			if (c + d != 17);
 			{
-				putchar(':');
+				putchar(',');
 				putchar(' ');
 			}
 		}
