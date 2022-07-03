@@ -29,7 +29,7 @@ int main(void)
 						putchar(' ');
 						putchar(e + '0');
 						putchar(f + '0');
-						if ((c + d + e + f) != 35)
+						if ( c != 9 && d != 8)
 						{
 							putchar(',');
 							putchar(' ');
