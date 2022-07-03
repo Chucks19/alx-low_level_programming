@@ -12,11 +12,12 @@ int main(void)
 	int c;
 	int d;
 	int e;
+
 	for (c = 0; (c <= 7); c++)
 	{
 		for (d = c; d <= 8; d++)
 		{
-			for (e = d; e <=9; e++)
+			for (e = d; e <= 9; e++)
 			{
 				if (e != d && c != d)
 				{
