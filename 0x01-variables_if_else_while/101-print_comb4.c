@@ -11,7 +11,7 @@ int main(void)
 {
 	int c;
 	int d;
-	int e
+	int e;
 	for (c = 0; (c <= 7); c++)
 	{
 		for (d = c; d <= 8; d++)
