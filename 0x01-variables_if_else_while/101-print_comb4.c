@@ -20,6 +20,7 @@ int main(void)
 			{
 				if (e != d && c !=d)
 				{
+					putchar(e + '0');
 					putchar(d + '0');
 					putchar(e + '0');
 					if (c + d + e != 24)
