@@ -6,13 +6,12 @@
  */
 int main(void)
 {
-	char joy[9] = "_putchar";
-	int i;
-
-	for (i = 0; i < 8; i = i + 1)
+	char joy = '_putchar';
+	
+	for (joy = 0; joy < 8; joy = joy++)
 	{
-		_putchar(joy[i]);
+		putchar(joy);
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
