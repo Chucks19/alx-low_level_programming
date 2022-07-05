@@ -11,7 +11,7 @@ int main(void)
 	
 	for (i = 0; i < 8; i = i++)
 	{
-		_putchar(i);
+		_putchar(joy[i]);
 	}
 	_putchar('\n');
 	return (0);
