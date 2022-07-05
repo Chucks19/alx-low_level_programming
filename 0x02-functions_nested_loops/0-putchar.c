@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char joy[9] = '_putchar';
+	char joy[9] = "_putchar";
 	
 	for (i = 0; i < 8; i = i++)
 	{
