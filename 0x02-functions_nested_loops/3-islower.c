@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * _is_lower - lower case
+ * _islower - lower case
+ *
+ * c - is lower case alph
  *
  * Return: Always 0 (Success)
  */
@@ -12,7 +14,7 @@ int _islower(int c)
 		return (1);
 	}
 	else
-	{ 
+	{
 		return (0);
 	}
 }
