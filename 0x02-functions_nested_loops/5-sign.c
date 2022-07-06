@@ -1,20 +1,22 @@
 #include "main.h"
 /**
- * _isalpha - lower case
+ * print_sign - lower case
  *
  * @c: ASCII code
  *
  * Return: Always 0 (Success)
  */
 
-int _isalpha(int c)
+int print_sign(int n)
 {
-	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+	if ((n > 0 )
 	{
+		putchar(43);
 		return (1);
 	}
 	else
 	{
+		putchar(45);
 		return (0);
 	}
 }
