@@ -2,7 +2,7 @@
 /**
  * _islower - lower case
  *
- * c - is lower case alph
+ * @c - is lower case alph
  *
  * Return: Always 0 (Success)
  */
