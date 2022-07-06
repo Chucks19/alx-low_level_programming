@@ -2,7 +2,7 @@
 /**
  * _islower - lower case
  *
- * @c - is lower case alph
+ * @c: ASCII code
  *
  * Return: Always 0 (Success)
  */
