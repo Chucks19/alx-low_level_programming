@@ -14,14 +14,19 @@ void times_table(void)
 		for (k = 0; k <= 9; k++)
 		{
 			opp = j * k;
-			if (j == 0 && k != 9)
+			if (opp == 0 && k != 9)
 			{
 				_putchar (opp +48);
 				_putchar(44);
 				_putchar(32);
 				_putchar(32);
 			}
-			else if (k > 0 && opp <= 9 && k != 9)
+			else if (opp == 0)
+			{
+				_putchar (opp +48);
+				_putchar (32);
+			}
+			else if (opp > 0 && opp <= 9 && k != 9)
 			{
 				_putchar(32);
 				_putchar(opp + 48);
