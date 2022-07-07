@@ -17,15 +17,18 @@ void times_table(void)
 			if (opp <= 9)
 			{
 				_putchar(opp +48);
+				_putchar(44);
+				_putchar(32);
+				_putchar(32);
 			}
 			else
 			{
 				_putchar((opp/10) +48);
 				_putchar((opp%10) +48);
+				_putchar(44);
+				_putchar(32);
 			}
-			_putchar(44);
-			_putchar(32);
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
