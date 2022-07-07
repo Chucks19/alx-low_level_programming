@@ -21,7 +21,7 @@ void times_table(void)
 				_putchar(32);
 				_putchar(32);
 			}
-			if else (k != 9)
+			else if (k != 9)
 			{
 				_putchar((opp/10) +48);
 				_putchar((opp%10) +48);
