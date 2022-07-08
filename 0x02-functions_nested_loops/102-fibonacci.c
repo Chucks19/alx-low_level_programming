@@ -20,8 +20,8 @@ int main(void)
 		{
 			printf("%ld\n", j);
 		}
-		j = k;
 		n = j + k;
+		j = k;
 		k = n;
 	}
 	return (0);
