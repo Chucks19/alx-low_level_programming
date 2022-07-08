@@ -9,10 +9,12 @@
 int _isupper(int c)
 {
 	char i;
-	for (i = 'A'; i <= 'Z'; i++)
-	{ 
-		if (c == i) 
-			return (1);
-	}
-}
+	int is_upper = 0;
 
+	for (i = 'A'; i <= 'Z'; i++)
+	{
+		if (i == c)
+			is_upper = 1;
+	}
+	return (is_upper);
+}
