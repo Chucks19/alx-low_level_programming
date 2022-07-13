@@ -1,1 +1,3 @@
-my first Readme
+Exploring pointers and struct
+
+in C
