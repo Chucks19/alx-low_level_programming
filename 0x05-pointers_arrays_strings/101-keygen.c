@@ -31,3 +31,8 @@ int main(void)
 	}
 	putchar(c);
 
+	}
+	putchar(sum);
+
+	return (0);
+}
