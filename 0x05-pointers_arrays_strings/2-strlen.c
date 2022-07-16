@@ -8,11 +8,13 @@
  */
 int _strlen(char *j)
 {
-	int len;
+	int len = 0;
 
 	if (j)
-	{
-		len = _strlen(j);
+	
+{
+	while (*(j + len))
+		++len;
 	}
 	return (len);
 }
