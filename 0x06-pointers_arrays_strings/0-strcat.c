@@ -1,18 +1,24 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * _memset - sets memory to array
- * @s: array to set
- * @b: value to set it as
- * @n: n amount of times
- * Return: char value of s
+ * _strcat - concatenates two strings,
+ *  @dest: destination.
+ * @src: source.
+ * Return: the pointer to dest.
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strcat(char *dest, char *src)
 {
-	unsigned int i;
-
-	for (i = 0; i < n; i++)
-	{
-		s[i] = b;
-	}
-	return (s);
+int count = 0, count2 = 0;
+while (*(dest + count) != '\0')
+{
+count++;
+}
+while (count2 >= 0)
+{
+*(dest + count) = *(src + count2);
+if (*(src + count2) == '\0')
+break;
+count++;
+count2++;
+}
+return (dest);
 }
