@@ -1,29 +1,27 @@
 #include "main.h"
 /**
- * _memset - sets memory to array
- * @s: array to set
- * @b: value to set it as
- * @n: n amount of times
- * Return: char value of s
+ * _strncat - concatenates two strings,
+ * @dest: destination.
+ * @src: source.
+ * @n: amount of bytes used from src.
+ * Return: the pointer to dest.
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0;
-	int j = 0;
+	int count = 0, count2 = 0;
 
-	while (*(s + i) != '\0')
+	while (*(dest + count) != '\0')
 	{
-		i++;
+		count++;
 	}
-	if(*(b + j) != '\0')
-	{
-		while (j < n)
-		{
 
-			*(s + i) = *(b + j);
-			i++;
-			j++;
-		}
+	while (count2 < n)
+	{
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
+			break;
+		count++;
+		count2++;
 	}
-	return (s);
+	return (dest);
 }
