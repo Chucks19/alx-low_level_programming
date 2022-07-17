@@ -24,10 +24,6 @@ char *_memset(char *s, char b, unsigned int n)
 			i++;
 			j++;
 		}
-		else
-		{
-		break;
-		}
 	}
 	return (s);
 }
