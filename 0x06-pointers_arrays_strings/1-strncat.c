@@ -8,20 +8,26 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i, j = 0, < n;
-	while(*(s + i) != '\0')
+	int i = 0;
+	int j;
+
+	while (*(s + i) != '\0')
 	{
 		i++;
 	}
 	if(*(b + j) != '\0')
 	{
-		*(s + i) = *(b + j);
-		i++;
-		j++;
-	}
-	else
-	{
+		while (j < n)
+		{
+
+			*(s + i) = *(b + j);
+			i++;
+			j++;
+		}
+		else
+		{
 		break;
+		}
 	}
 	return (s);
 }
