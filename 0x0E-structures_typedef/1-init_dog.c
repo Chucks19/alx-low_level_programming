@@ -2,7 +2,8 @@
 #include "dog.h"
 
 /**
- * struct dog - check the code
+ * init_dog - initialise a variable
+ * @d: check the code
  * @name: gy
  * @age: yy
  * @owner: yu
