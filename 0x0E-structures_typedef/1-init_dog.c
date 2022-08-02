@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "dog.h"
-
 /**
  * init_dog - initialise a variable
  * @d: check the code
@@ -11,7 +10,6 @@
  *
  * Return: Always 0.
  */
-
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	d = malloc(sizeof(struct dog));
