@@ -4,12 +4,13 @@
 /**
 *typedef struct dog - struct for dog
 * @name: name
- * @age: age
- * @owner:  owner
- * Description: This struct is for dog
- */
+* @age: age
+* @owner:  owner
+* Description: This struct is for dog
+*/
 
-struct dog{
+struct dog
+{
     char* name; 
     float age;
     char* owner;
