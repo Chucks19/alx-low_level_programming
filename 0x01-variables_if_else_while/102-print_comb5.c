@@ -22,9 +22,8 @@ int main(void)
 			{
 				for (f = 0; f <= 9; f++)
 				{
-					if ((c + d) > (e + f))
-						break;
-					else if ((c + d) < (e + f))
+					if ((c + d) < (e + f))
+						f += 1;
 					{
 						putchar(c + '0');
 						putchar(d + '0');
