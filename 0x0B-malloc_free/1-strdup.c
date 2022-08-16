@@ -8,22 +8,22 @@
  */
 char *_strdup(char *str)
 {
-	char *strout;
-	unsigned int i, j;
+	char *p;
+	unsigned int i;
 
 	if (str == NULL)
 		return (NULL);
 
-	for (i = 0; str[i] != '\0'; i++)
-		;
+	while (str)
+		i++;
 
-	strout = (char *)malloc(sizeof(char) * (i + 1));
+	p = (char *)malloc(sizeof(char) * i);
 
-	if (strout == NULL)
+	if (p == NULL)
 		return (NULL);
 
-	for (j = 0; j <= i; j++)
-		strout[j] = str[j];
+	while (str)
+		*p++ = *str++;
 
-	return (strout);
+	return (p);
 }
