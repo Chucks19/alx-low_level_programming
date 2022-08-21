@@ -28,9 +28,9 @@ void print_all(const char * const format, ...)
                                 break:
 			case 's':
 				st = va_arg(pan, char*) 
-				if (st == null)
-					printf("%s", nil)
-                                printf("%s", va_arg(pan, st);
+				if (!st)
+					printf("(nil)")
+                                printf("%s", st);
                                 break:
 		}
 		i++;
