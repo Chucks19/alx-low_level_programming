@@ -10,7 +10,7 @@ void print_all(const char * const format, ...)
 {
 	va_list Pan;
 	int i = 0;
-
+	char *st;
 	va_start(pan, format);
 	while(format && format[i])
 	{
@@ -27,10 +27,10 @@ void print_all(const char * const format, ...)
                                 printf("%f", va_arg(pan, double);
                                 break:
 			case 's':
-				s = va_arg(pan, char*) 
-				if (s == null)
+				st = va_arg(pan, char*) 
+				if (st == null)
 					printf("%s", nil)
-                                printf("%s", va_arg(pan, s);
+                                printf("%s", va_arg(pan, st);
                                 break:
 		}
 		i++;
