@@ -18,20 +18,23 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				printf("%c", va_arg(pan, int);
-				break:
+				break;
 			case 'i':
                                 printf("%i", va_arg(pan, int);
-                                break:
+                                break;
 
 			case 'f':
                                 printf("%f", va_arg(pan, double);
-                                break:
+                                break;
 			case 's':
-				st = va_arg(pan, char*) 
+				st = va_arg(pan, char*);
 				if (!st)
-					printf("(nil)")
+				{
+					printf("(nil)");
+					break;
+				}
                                 printf("%s", st);
-                                break:
+                                break;
 		}
 		i++;
 	}
