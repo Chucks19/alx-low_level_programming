@@ -11,11 +11,11 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
        unsigned int j, i;
 
        j = 0;
-       checker = 0;
+       checker = 1;
        differnce = n ^ m;
        for (i = 0; i < (sizeof(unsigned long int) * 8); i++)
        {
-              if ((differnce | checker) == 1)
+              if ((differnce & checker) == 1)
                      j++;
               checker <<= 1;
        }
