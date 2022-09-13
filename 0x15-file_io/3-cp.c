@@ -25,11 +25,13 @@ int main(int argc, char *argv[])
        if (re == -1 || file_from == -1)
        {
               dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+              free(buf);
               exit(98);
        }
        if (wri == -1 || file_to == -1)
        {
               dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
+              free(buf);
               exit(99);
        }
        err_close = close(file_from);
