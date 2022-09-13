@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
        int file_from, file_to, re, wri, err_close;
-       char * buf;
+       char *buf;
        file_from = open(argv[1], O_RDONLY);
        file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
        
@@ -55,4 +55,5 @@ int main(int argc, char *argv[])
               dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
               exit(100);
        }
+       return (0);
 }
