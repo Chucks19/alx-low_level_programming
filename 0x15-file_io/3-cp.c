@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
 {
        int file_from, file_to, re, wri, err_close;
        char *buf;
+       buf = malloc(sizeof(char) * 1024);
        file_from = open(argv[1], O_RDONLY);
        file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
        
