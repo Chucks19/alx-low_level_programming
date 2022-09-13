@@ -18,27 +18,16 @@ int main(int argc, char *argv[])
        {
               dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
               exit(97);
-       }
-       if (file_from == -1)
-       {
-              dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-              exit(98);
-       }
-       if (file_to == -1)
-       {
-              dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
-              exit(98);
-       }
-
+       }     
        re = read(file_from, buf, 1024);
        wri = write(file_to, buf, 1024);
 
-       if (re == -1)
+       if (re == -1 || file_from == -1)
        {
               dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
               exit(98);
        }
-       if (wri == -1)
+       if (wri == -1 || file_to == -1)
        {
               dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[2]);
               exit(98);
