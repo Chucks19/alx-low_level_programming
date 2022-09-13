@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
               exit(97);
        }     
        re = read(file_from, buf, 1024);
-       wri = write(file_to, buf, 1024);
+       wri = write(file_to, buf, re);
 
        if (re == -1 || file_from == -1)
        {
