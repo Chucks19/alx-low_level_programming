@@ -16,15 +16,6 @@ void print_all(const char * const format, ...)
 	va_start(valist, format);
 	while (format && format[i])
 	{
-		j = 0;
-		while (t_arg[j])
-		{
-			if (format[i] == t_arg[j] && c)
-			{
-				printf(", ");
-				break;
-			} j++;
-		}
 		switch (format[i])
 		{
 		case 'c':
@@ -46,6 +37,15 @@ void print_all(const char * const format, ...)
 			printf("%s, ", str);
 			break;
 		} i++;
+		j = 0;
+		while (t_arg[j])
+		{
+			if (format[i] == t_arg[j] && format[i] != "\0")
+			{
+				printf(", ");
+				break;
+			} j++;
+		}
 	}
 	printf("\n"), va_end(valist);
 }
