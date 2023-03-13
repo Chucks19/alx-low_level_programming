@@ -1,4 +1,6 @@
 #include "variadic_functions.h"
+#include <string.h>
+
 
 /**
  * print_all - prints anything.
@@ -40,7 +42,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (t_arg[j])
 		{
-			if (satrcmp(format[i] == t_arg[j]) && format != "\0")
+			if (strcmp(format[i] == t_arg[j]) && format != "\0")
 			{
 				printf(", ");
 				break;
